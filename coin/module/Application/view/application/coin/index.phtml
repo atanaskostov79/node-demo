@@ -1,0 +1,22 @@
+<h1>Валути</h1>
+
+<?php foreach($posts as $post): ?>
+<div class="row" style="border-bottom: 1px solid #c3c3c3">
+<div class="col">
+ <img src="https://www.cryptocompare.com/<?php echo $this->escapeHtml($post->getImageUrl()); ?>" width=100 align="left" style="padding:10px"/>
+
+
+
+    <?= $this->escapeHtml($post->getId()); ?>
+    
+
+        
+<br />
+  Име:  <?= $this->escapeHtml($post->getName()); ?>
+  <br />  
+   Пълно име :<?= $this->escapeHtml($post->getFullName()); ?>
+
+
+</div>
+</div>
+<?php endforeach; ?>
